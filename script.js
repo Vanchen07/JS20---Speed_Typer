@@ -48,3 +48,14 @@ function addWordToDOM() {
 
 addWordToDOM();
 
+text.addEventListener('input', e => {
+    const insertedText = e.target.value;
+    
+    if (insertedText === randomWord) {
+        addWordToDOM();
+        updateScore();
+
+        e.target.value = '';
+    }
+});
+
