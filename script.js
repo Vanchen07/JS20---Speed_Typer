@@ -37,3 +37,7 @@ let score = 0;
 
 let time = 10;
 
+function getRandomWord() {
+    return words[Math.floor(Math.random() * words.length)];
+}
+
