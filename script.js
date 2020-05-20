@@ -31,3 +31,9 @@ const words = [
     'loving'
 ];
 
+let randomWord;
+
+let score = 0;
+
+let time = 10;
+
