@@ -85,6 +85,12 @@ text.addEventListener('input', e => {
         updateScore();
 
         e.target.value = '';
+
+        time += 5;
+
+        updateTime();
     }
 });
+
+settingsBtn.addEventListener('click', () => settings.classList.toggle('hide'));
 
