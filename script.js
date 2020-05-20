@@ -37,6 +37,10 @@ let score = 0;
 
 let time = 10;
 
+text.focus();
+
+const timeInterval = setInterval(updateTime, 1000);
+
 function getRandomWord() {
     return words[Math.floor(Math.random() * words.length)];
 }
@@ -49,6 +53,11 @@ function addWordToDOM() {
 function updateScore() {
     score++;
     scoreEl.innerHTML = score;
+}
+
+function updateTime() {
+    time--;
+    timeEl.innerHTML = time + 's';
 }
 
 addWordToDOM();
